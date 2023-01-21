@@ -1,0 +1,100 @@
+<div class="bg-aqua bg-pets shadows-inset-02 comenzar home-section flex-1-0-auto columns">
+  <div class="container px-30 d-grid flex-1-0-auto columns ">
+    <div class="w-400 mx-auto pt-60">
+      <div class="d-flex align-items-center flex-column mb-24 position-img">
+
+        <img src="https://www.seguropeludo.com.co/img/SP_LOGO_VA.svg" alt="Mascotas" style="max-width:100%"
+          width="350px" class="mb-3" draggable="false">
+        <p class="text-peludo fz-13 white"> ¡Protege a los que más amas!</p>
+      </div>
+      <div class="group">
+        <input maxlength="20" autocomplete="off"
+          class="btn-efecto mb-12 input-peludo br-white-1 br--4 grey placeholder-aqua bg-white w-100 fz-14 only-letters"
+          type="text" id="nombrePel" required="">
+        <label for="" class="label-effect aqua">Nombre del peludito</label>
+      </div>
+      <nav class="col-12 px-0 mb-12">
+        <div class="nav nav-tabs toogle-btn triangle" role="tablist">
+          <a class="nav-item nav-link py-3  " [ngClass]="tipo_p =='P' ?'active':''" (click)="tipo_p ='P'">PERRO</a>
+          <a class="nav-item nav-link py-3" [ngClass]="tipo_p =='G' ?'active':''" (click)="tipo_p ='G'">GATO</a>
+          <span class="after-tab"[ngClass]="tipo_p =='P' ?'tras':'tras-10'" ></span>
+
+        </div>
+      </nav>
+      <nav class="col-12 px-0 mb-12">
+        <div class="nav nav-tabs toogle-btn triangle" role="tablist">
+          <a class="nav-item nav-link py-3 " [ngClass]="tipo_s =='H' ?'active':''" (click)="tipo_s ='H'">HEMBRA</a>
+          <a class="nav-item nav-link py-3" [ngClass]="tipo_s =='M' ?'active':''" (click)="tipo_s ='M'">MACHO</a>
+          <span class="after-tab"[ngClass]="tipo_s =='H' ?'tras':'tras-10'" ></span>
+        </div>
+      </nav>
+
+      <div class="d-flex ">
+        <div class="col-4 pl-0 pr-7-5">
+          <input maxlength="2" autocomplete="off"
+            class="btn-efecto mb-12 input-peludo br-white-1 br--4 grey placeholder-aqua bg-white w-100 fz-14 only-numbers"
+            type="text" id="edadPel" required="" inputmode="numeric">
+          <label for="" class="label-effect aqua">Edad</label>
+        </div>
+
+        <div class="col-8 pr-0 pl-7-5">
+          <div class="select-awesome aqua">
+            <select name="edad" id="edad" class="btn-efecto bg-white overflow-hidden br-white-1 br--4" required="">
+              <option value="" [disabled]="true">Seleccione</option>
+              <option value="21">Meses</option>
+              <option value="22">Años</option>
+            </select>
+            <label class="pl-3 select-effect aqua">Meses o Años</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-12 col-sm-12 px-0" data-select2-id="6">
+        <div class="select-awesome aqua">
+          <div class="select-awesome bg-white grey br-aqua-1 br--4 select-padding-left" style="height:56px;">
+            <select name="raza" id="raza" class="select2 btn-efecto bg-white overflow-hidden select2-hidden-accessible"
+              required="" tabindex="-1" aria-hidden="true" data-select2-id="raza">
+              <option value="" [disabled]="true">Seleccione</option>
+              <option value="205" >Abisinio</option>
+              <option value="2" >Affenpinscher</option>
+            </select>
+            <label class="select-effect aqua">Raza</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="group">
+        <input maxlength="50" autocomplete="off"
+          class="btn-efecto mb-12 input-peludo br-white-1 br--4 grey placeholder-aqua bg-white w-100 fz-14" type="text"
+          id="txtCorreo" required="">
+        <label for="" class="label-effect aqua">Correo electrónico</label>
+      </div>
+      <span id="result"></span>
+      <div class="d-flex align-items-center mb-3">
+        <label class="checkbox-custom-label mr-4 w-16">
+          <input type="checkbox" name="checkAceptoTerm" id="checkAceptoTerm" class="checkbox-custom">
+          <span class="checkmark square-check-icon"></span>
+        </label>
+        <label for="checkAceptoTerm" class="text-left pcheck white cursor-pointer no-text-select fz-14">
+          Autorizo el tratamiento de mis datos y acepto la <a href="/politica-datos.php" target="_blank"
+            class="white text-decoration-none w-100 text-center"> <b>Política de Tratamiento de Datos
+              Personales</b></a>,
+          así como los <a href="/terminos-condiciones.php" target="_blank" class="white fw-600"><b>términos y
+              condiciones.</b></a>
+        </label>
+      </div>
+      <div class="d-grid">
+        <button class="br--8 br--none py-2 bg-yellow2 letraCot fz-14 w-100 mb-24 shadows--02"
+          id="btnAsegurar">COTIZAR</button>
+      </div>
+
+      <div class="flex-1-0-auto  py-4 d-flex justify-content-center align-items-center">
+        <div
+          class="mx-auto circle cursor-pointer bg-white aqua d-flex justify-content-center align-items-center shadows--02"
+          onclick="scrollUp(this)" style="width:48px; height:48px;">
+          <i class="fz-24 fa fa-chevron-up"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
