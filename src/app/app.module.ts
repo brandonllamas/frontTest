@@ -11,6 +11,7 @@ import { TablePlanesComponent } from './components/NuestroPlanes/table-planes/ta
 import { SeguroClubComponent } from './components/seguro-club/seguro-club.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FormularioComponent } from './components/formulario/formulario.componen
     TablePlanesComponent,
     SeguroClubComponent,
     FooterComponent,
-    FormularioComponent
+    FormularioComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,

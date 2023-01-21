@@ -1,0 +1,77 @@
+.contactanos-btn {
+  margin: 0 15px 0 8px;
+  padding: 2px 0px 6px;
+  border: 2px solid #0077b9;
+  border-radius: 30px;
+  opacity: 1;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  color: #058bcc;
+  display: block;
+  background-color: white;
+}
+.comenzar-btn.active {
+  transform: scale(1);
+  max-width: none;
+  margin: 0px 8px;
+  padding: 4px 24px 8px;
+  font-size: 17px;
+}
+.comenzar-btn.active {
+  transform: scale(1);
+  max-width: none;
+  margin: 0px 8px;
+  padding: 4px 24px 8px;
+  font-size: 17px;
+}
+.comenzar-btn {
+  transform: scale(0);
+  color: white;
+  border: 0px;
+  border-radius: 8px;
+  background-color: #92d050;
+  overflow: hidden;
+}
+.head {
+  display: none;
+  height: 56px;
+}
+
+@media (max-width: 1024px){
+  .botones-menu {
+    display: none;
+}
+}
+.navbar-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+#menuMobile {
+  display: none;
+  background: white;
+  width: 100%;
+  max-width: 300px;
+  overflow: hidden;
+}
+
+
+@media (min-width: 1025px){
+  .logo_mobile {
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: center;
+    margin-left: 16px;
+}
+}
+
+@media (min-width: 1025px){
+.botones-menu {
+    display: flex;
+}
+}

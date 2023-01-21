@@ -1,0 +1,43 @@
+<div class=" head bg-white d-flex position-relative">
+  <div class="logo_mobile text-center w-100 d-flex align-item-center justify-content-center">
+      <a class=" py-0" href="/"><img class="img-fluid mx-auto" src="https://www.seguropeludo.com.co/img/Grupo%20968.svg" alt="Seguros mundial" draggable="false"></a>
+  </div>
+  <div class=" botones-menu position-absolute align-items-center" style="right:0; top:50%; transform: translateY(-50%)">
+                      <button class="mx-2 bg-transparent fw-bold border-0" style="color:#0077B9">¿Por qué?</button>
+          <button class="mx-2 bg-transparent fw-bold border-0" style="color:#0077B9" >Nuestros Planes</button>
+          <button class="mx-2 bg-transparent fw-bold border-0" style="color:#0077B9" href="#" target="_blank" >¿Quieres más info?</button>
+          <button class="mx-2 bg-transparent fw-bold border-0" style="color:#0077B9" >Club</button>
+          <button class="mx-2 bg-transparent fw-bold border-0" style="color:#0077B9" >Blog</button>
+          <button class="comenzar-btn active transition-all" >Comenzar</button>
+                  <button class="contactanos-btn px-sm-4 px-3" onclick="window.location.href='/contacto.php'">Contáctanos</button>
+  </div>
+  <div id="botones-menu-mobile" class="position-absolute align-items-center" style="left:16px; top:50%; transform: translateY(-50%)">
+      <i class="fa fa-bars fz-24 cursor-pointer" style="color: #0077B9" (click)="menu = !menu"></i>
+  </div>
+
+</div>
+<div id="menuMobile" class="shadows--02 open" style="display: block;position: absolute;z-index: 1;" *ngIf="menu">
+  <ul class="navbar-nav menuMobile">
+                      <li class="nav-item dropdown">
+              <button style="color: #1f3b61 !important;" class="nav-link bg-transparent fw-bold border-0" onclick="scrollDownMenu('porque')">¿Por qué?</button>
+          </li>
+          <li class="nav-item dropdown">
+              <button style="color: #1f3b61 !important;" class="nav-link bg-transparent fw-bold border-0" onclick="scrollDownMenu('UsPlanes')">Nuestros Planes</button>
+          </li>
+          <li class="nav-item dropdown">
+              <button style="color: #1f3b61 !important;" class="nav-link bg-transparent fw-bold border-0" href="pdf/esto_es_lo_que_debes_saber.pdf" target="_blank" onclick="window.open('pdf/esto_es_lo_que_debes_saber.pdf','esto_es_lo_que_debes_saber')">¿Quieres más info?</button>
+          </li>
+          <li class="nav-item dropdown">
+              <button style="color: #1f3b61 !important;" class="nav-link bg-transparent fw-bold border-0" onclick="scrollDownMenu('club')">Club</button>
+          </li>
+          <li class="nav-item dropdown">
+              <button style="color: #1f3b61 !important;" class="nav-link bg-transparent fw-bold border-0" onclick="window.open('https://mundoseguro.co/', '_blank');">Blog</button>
+          </li>
+          <li class="nav-item dropdown">
+              <button style="color: #1f3b61 !important;" class="nav-link bg-transparent fw-bold border-0" onclick="scrollDownMenu('comenzar')">Comenzar</button>
+          </li>
+                  <li class="nav-item dropdown">
+          <button style="color: #1f3b61 !important;" class="nav-link bg-transparent fw-bold border-0" onclick="window.location.href='/contacto.php'">Contáctanos</button>
+      </li>
+  </ul>
+</div>
