@@ -1,0 +1,42 @@
+
+.bg-animals{
+  content: "";
+  background-image: url(https://www.seguropeludo.com.co/img/Sin%20título-1.png) !important;
+  /* opacity: 0.19; */
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  /* position: absolute; */
+  background-size: 150px;
+  z-index: 1;
+}
+.br-bottom-left-8 {
+  border-bottom-left-radius: 8px;
+}
+.bg-blue--dark {
+  background-color: #094f71 !important;
+}
+.head-planes-desk {
+  display: grid;
+}
+.columns {
+  display: flex;
+  flex-direction: column;
+}
+.home-section {
+  min-height: calc((var(--vh, 1vh) * 100) - 50px);
+  height: auto !important;
+}
+.bg-aqua {
+  background: #34bacf !important;
+}
+
+.bg-animals::before{
+  content: "";
+  background-image: url(https://www.seguropeludo.com.co/img/Sin%20título-1.png) !important;
+  background-size: 150px !important;
+  z-index: 0;
+  opacity: 0.1;
+  height: 100%;
+}

@@ -1,0 +1,17 @@
+.banda-colorcito {
+  background: linear-gradient( 0deg, #fff 55%, #efefef 55%, #efefef 85%, #ffff 85% );
+}
+.bg-pets {
+  position: relative;
+}
+.bg-pets.bg-pets::before  {
+  background-image: url("https://www.seguropeludo.com.co/img/Sin título-1.png");
+  opacity: 0.1;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  position: absolute;
+  background-size: 150px;
+  z-index: 1;
+}

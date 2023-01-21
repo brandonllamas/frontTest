@@ -1,0 +1,29 @@
+.banner{
+  background-image: url("https://www.seguropeludo.com.co/img/seguro-mascotas.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y:top;
+  background-repeat: no-repeat;
+}
+.position-img {
+  position: relative;
+}
+ .banner > div {
+  height: 95vh;
+  background: linear-gradient( to top, #005684e0 0%, #006da88c 40%, #0083ca21 60%, #008ad400 100% );
+  display: flex;
+  align-items: flex-end;
+}
+.home-section {
+  min-height: calc((var(--vh, 1vh) * 100) - 50px);
+  height: auto !important;
+}
+.columns {
+  display: flex;
+  flex-direction: column;
+}
+.grupoabajo {
+  position: relative;
+  margin-bottom: 9px;
+  width: 100%;
+}
